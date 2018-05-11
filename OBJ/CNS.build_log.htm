@@ -27,14 +27,61 @@ Project File Date:  04/20/2018
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 4 (build 422)', folder: 'd:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'CNS'
-"..\OBJ\CNS.axf" - 0 Error(s), 0 Warning(s).
+compiling cns_core.c...
+..\CNS_CORE\cns_type.h(40): warning:  #1-D: last line of file ends without a newline
+  */
+..\CNS_CORE\cns.h(214): warning:  #1295-D: Deprecated declaration CNS_EventHandle - give arg types
+  		extern void CNS_EventHandle ();
+..\CNS_CORE\cns.h(216): warning:  #1295-D: Deprecated declaration CNS_init - give arg types
+  		extern void CNS_init        ();
+..\CNS_CORE\cns_action.h(50): warning:  #1-D: last line of file ends without a newline
+  */
+..\CNS_CORE\cns_core.c(80): error:  #28: expression must have a constant value
+  						INT16U b = a;
+..\CNS_CORE\cns_core.c(92): warning:  #223-D: function "STMFLASH_ReadWord" declared implicitly
+      INT32U first_end_addr   = STMFLASH_ReadWord(FIRST_WRITEADDRPOINTER_END);
+..\CNS_CORE\cns_core.c(164): warning:  #223-D: function "SPI1_Init" declared implicitly
+  		SPI1_Init();
+..\CNS_CORE\cns_core.c(165): warning:  #223-D: function "Charge_Init" declared implicitly
+      Charge_Init();	  
+..\CNS_CORE\cns_core.c(166): warning:  #223-D: function "ItanCLEAR" declared implicitly
+  	  ItanCLEAR();	 	  
+..\CNS_CORE\cns_core.c(167): warning:  #223-D: function "ItanInit" declared implicitly
+  	  ItanInit();
+..\CNS_CORE\cns_core.c(168): warning:  #223-D: function "RTC_Init" declared implicitly
+      RTC_Init();		
+..\CNS_CORE\cns_core.c(169): warning:  #223-D: function "uart_init" declared implicitly
+  		uart_init(19200);
+..\CNS_CORE\cns_core.c(170): warning:  #223-D: function "TIM3_Int_Init" declared implicitly
+  		TIM3_Int_Init();
+..\CNS_CORE\cns_core.c(171): warning:  #223-D: function "TIM4_Int_Init" declared implicitly
+  	  TIM4_Int_Init();
+..\CNS_CORE\cns_core.c: 13 warnings, 1 error
+compiling timer.c...
+..\BSP\timer.h(18): warning:  #1295-D: Deprecated declaration TIM3_Int_Init - give arg types
+  void TIM3_Int_Init();
+..\CNS_CORE\cns_type.h(40): warning:  #1-D: last line of file ends without a newline
+  */
+..\CNS_CORE\cns.h(214): warning:  #1295-D: Deprecated declaration CNS_EventHandle - give arg types
+  		extern void CNS_EventHandle ();
+..\CNS_CORE\cns.h(216): warning:  #1295-D: Deprecated declaration CNS_init - give arg types
+  		extern void CNS_init        ();
+..\CNS_CORE\cns_event.h(62): warning:  #1295-D: Deprecated declaration CNS_ErrCheck - give arg types
+  		extern   void     CNS_ErrCheck();
+..\CNS_CORE\cns_event.h(70): warning:  #1295-D: Deprecated declaration CNS_GetSample - give arg types
+  		extern   void     CNS_GetSample();
+..\CNS_CORE\cns_event.h(81): warning:  #1-D: last line of file ends without a newline
+   */
+..\BSP\timer.c: 7 warnings, 0 errors
+"..\OBJ\CNS.axf" - 1 Error(s), 20 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_CNS
   d:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:00
+Target not created.
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

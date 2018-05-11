@@ -75,6 +75,7 @@ volatile    POINTER_LOC        CurPointerLoc       =   POINTER_LOC_SECOND;
 						EEG_ADDR   *End_buf                      =  &EEG_BUF[SAMPLING_FREQUENCY+2];
 						EEG_ADDR   *Mem_head                     =  &EEG_BUF[2];
 						EEG_ADDR   *Mem_tail                     =  &EEG_BUF[2];
+				
 extern INT32U CurPoint;						
 void CNS_EventRegist(EVENT_CT* const event_ct,ACTION_PTR action)
 {
